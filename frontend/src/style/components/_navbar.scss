@@ -1,0 +1,68 @@
+.navbar {
+  background-color: $dark-black;
+  width: 100%;
+  height: 120px;
+  @media (max-width: $desktop-breakpoint) {
+    height: 70px;
+ }
+}
+
+
+.navbar-collapse{
+  background-color:$dark-black;
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+.navbar-toggle {
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+.main {
+   margin:auto;
+  @media (max-width: $desktop-breakpoint - 0.01rem ) {
+    display: none;
+  }
+}
+
+.link-nav {
+  color: $grey;
+  font-size: $m-size;
+  letter-spacing: $xxs-size;
+  margin: $l-size;
+  text-decoration: none;
+  @media (min-width: $desktop-breakpoint) {
+    font-size: $mx-size;
+    &:hover {
+      text-decoration: none;
+      border-bottom: $dark-black solid 0.5px;
+    }
+  }
+  &:hover {
+    text-decoration: none;
+    color: $off-white;
+    font-weight: 600;
+    padding: $xs-size 0;
+  }
+}
+.is-active {
+  color: $off-white;
+  padding: $xs-size 0;
+  font-weight: 600;
+  @media (min-width: $desktop-breakpoint) {
+    border-bottom: $off-white solid 0.5px;
+}
+}
+
+.fa {
+  outline: none;
+  color: $off-white;
+  border: none;
+  font-size: $mx-size;
+  background-color: none;
+}
+.fa-bars{
+  font-size: $l-size;
+  color: $off-white;
+}

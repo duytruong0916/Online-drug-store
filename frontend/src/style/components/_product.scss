@@ -1,0 +1,7 @@
+.product-wrapper {
+    width: 50%;
+    margin: auto;
+    @media (max-width: $desktop-breakpoint) {
+        width: 90%;
+      }
+}
